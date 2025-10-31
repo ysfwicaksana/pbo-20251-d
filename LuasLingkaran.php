@@ -1,9 +1,11 @@
 <?php
 
+namespace App\Math; //pasang namespace
+
 class LuasLingkaran {
     
     public const phi = 3.14;
-    public int $jari;
+    private int $jari;
 
     public function __construct($isiJari = 1) {
         $this->jari = $isiJari;
@@ -25,7 +27,5 @@ class LuasLingkaran {
     }
 }
 
-$lingkaran = new LuasLingkaran(7);
-$lingkaran->tampil('roda'); //panggil method
-LuasLingkaran::testing();
+
 
